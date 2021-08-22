@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-purple-900">
+    <header>
+        <h1 class="text-center lg:text-4xl text-xl underlin text-gray-400 mt-2">Calculate Your BMI</h1><hr>
+    </header>
+    <main>
+        <section>
+            <div class="card lg:w-2/5 w-11/12 md:w-9/12 mx-auto lg:mt-10 mt-4 p-6 pb-10 border rounded shadow-2xl">
+                <h1 class="text-center font-bold bg-purple-100 py-3 mb-4">Units Type Metrics</h1>
+                <label>Give Your Height</label>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="">
+                        <input class="p-2 outline-none" type="text" id="feet" placeholder="Feet">
+                    </div>
+                    <div class="w-full">
+                        <input class="p-2 outline-none" type="text" id="inch" placeholder="inch">
+                    </div>
+                </div>
+                <label>Give Your Weight</label>
+                <div class="">
+                    <input class="p-2 outline-none w-full relative" type="text" id="weight" placeholder="Weight (kg)">
+                </div>
+                <div class="text-center my-4">
+                    <button id="Calculate-btn" class="bg-purple-300 px-6 py-2 rounded hover:bg-purple-400 text-xl mb-2 lg:mb-0"><span class="text-green-700 font-bold">C</span>alculate</button>
+                    <button id="Reset-btn" class="bg-purple-300 px-6 py-2 rounded hover:bg-purple-400 text-xl capitalize"><span class="text-red-600 font-bold">X</span> Reset</button>
+                </div>
+                <label>Ger Your BMI</label>
+                <div class="getBMI">
+                    <input class="p-2 outline-none w-full relative" type="text" id="getBMI" placeholder="Your BMI">
+                </div>
+                <label>Your BMI Catagory</label>
+                <div class="">
+                    <input class="p-2 outline-none w-full" type="text" id="catagory" placeholder="Your BMI Catagory">
+                </div>
+                <label>Your Health Risk</label>
+                <div class="">
+                    <input class="p-2 outline-none w-full" type="text" id="healthrisk" placeholder="Your Health Risk">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1 class="text-center mt-1">Designed by Anik nath</h1>
+    </footer>
+    <!-- js file -->
+    <script src="script.js"></script>
+</body>
+</html>

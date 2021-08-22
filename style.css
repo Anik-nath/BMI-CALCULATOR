@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(4px);
+    overflow-x: hidden;
+}
+label{
+    color: aliceblue;
+}
+input{
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: yellow;
+    font-weight: bold;
+    font-size: large;
+}
